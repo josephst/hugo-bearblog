@@ -13,16 +13,9 @@
   {{ .Content }}
 </content>
 
-<<<<<<< HEAD
 {{ if eq .Type "blog" }}{{ if (.Param "enablePostNavigator")}}
 {{- partial "post_navigator.html" . -}}
 {{ end }}{{ end }}
-||||||| parent of 720f4c9 (Add Post Navigator setting for Blog Posts (#119))
-=======
-{{ if (.Param "enablePostNavigator")}}
-{{- partial "post_navigator.html" . -}}
-{{ end }}
->>>>>>> 720f4c9 (Add Post Navigator setting for Blog Posts (#119))
 
 <p>
   {{ range (.GetTerms "tags") }}
